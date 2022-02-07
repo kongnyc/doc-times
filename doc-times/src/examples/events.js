@@ -1,5 +1,6 @@
 const now = new Date()
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default [
   {
     id: 14,
@@ -15,16 +16,21 @@ export default [
   },
   {
     id: 16,
-    title: 'Video Record',
-    start: new Date(2015, 3, 14, 15, 30, 0),
-    end: new Date(2015, 3, 14, 19, 0, 0),
+    title: 'Flu vaccine',
+    start: new Date(2022, 3, 2, 15, 30, 0),
+    end: new Date(2022, 3, 2, 19, 0, 0),
   },
   {
     id: 17,
-    title: 'Dutch Song Producing',
-    start: new Date(2015, 3, 14, 16, 30, 0),
-    end: new Date(2015, 3, 14, 20, 0, 0),
+    title: 'Covid vaccine',
+    start: new Date(2022, 2, 10, 16, 30, 0),
+    end: new Date(2022, 2, 10, 17, 0, 0),
   },
-  
+  {
+    id: 18,
+    title: 'Annual Physical Exam',
+    start: new Date(2022, 3, 6, 16, 30, 0),
+    end: new Date(2022, 3, 6, 17, 0, 0),
+  },
 
 ]

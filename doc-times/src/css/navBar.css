@@ -1,0 +1,15 @@
+.Nav{
+    text-align: end;
+}
+
+button.NavBtn{
+    border: none;
+    background: #0099ff;
+    color: black;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.active {
+    background-color: #0099FF;
+  }

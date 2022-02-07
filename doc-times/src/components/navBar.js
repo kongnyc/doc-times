@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import '../css/navBar.css'
 
 export default class NavBar extends Component {
   render() {
     return (
-      <div>
+      <div className="Nav">
       <li>
         <NavLink exact to="/">
-          <button className="addBizBtn">Home</button>
+          <button className="NavBtn">Home</button>
         </NavLink>
 
       </li>

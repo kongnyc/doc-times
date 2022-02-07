@@ -1,0 +1,15 @@
+.FlexBox{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cardlabel{
+    font-weight: bold;
+}
+
+.HomeBtnBox{
+    display: flex;
+    justify-content: space-evenly;
+}
