@@ -1,29 +1,38 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
+
 import { getAnalytics } from "firebase/analytics";
 import { getDatabase } from "firebase/database";
 import { getAuth } from "firebase/auth";
+import app from "firebase/app";
+import "firebase/auth";
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+const {
+  REACT_APP_APIKEY,
+  REACT_APP_AUTHDOMAIN,
+  REACT_APP_DATABASEURL,
+  REACT_APP_PROJECTID,
+  REACT_APP_STORAGEBUCKET,
+  REACT_APP_MESSAGINGSENDERID,
+  REACT_APP_APPID,
+} = process.env;
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAffl8cM_C-KelpcoVBdSjd20ipweE3684",
-  authDomain: "docstimes-8c894.firebaseapp.com",
-  projectId: "docstimes-8c894",
-  storageBucket: "docstimes-8c894.appspot.com",
-  messagingSenderId: "411421172154",
-  appId: "1:411421172154:web:525094c1f3502c99c77d83",
-  measurementId: "G-5KTKW90VQY"
+  apiKey: REACT_APP_APIKEY,
+  authDomain: REACT_APP_AUTHDOMAIN,
+  databaseURL: REACT_APP_DATABASEURL,
+  projectId: REACT_APP_PROJECTID,
+  storageBucket: REACT_APP_STORAGEBUCKET,
+  messagingSenderId: REACT_APP_MESSAGINGSENDERID,
+  appId: REACT_APP_APPID,
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+app.initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const database = getDatabase();
 
 //https://docstimes-8c894.firebaseio.com
 const auth = getAuth();
 auth.languageCode = 'it';
+
+export default app;
