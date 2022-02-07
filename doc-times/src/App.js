@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import {
   Route,
   Routes,
-  NavLink,
   HashRouter
 } from "react-router-dom";
 import HomePage from "./components/homePage";
@@ -11,6 +10,7 @@ import Login from "./components/login";
 import NavBar from './components/navBar'
 import Appointment from './components/appointment'
 import Docstimes from './components/docstimes'
+import Confirmation from './components/confirmation'
 
 export default class App extends Component {
   render() {
@@ -28,6 +28,7 @@ export default class App extends Component {
             <Route path="/register" element={<Register/>} ></Route>
             <Route path="/appointment" element={<Appointment/>} ></Route>
             <Route path="/docstimes" element={<Docstimes/>} ></Route>
+            <Route path="/confirmation" element={<Confirmation/>} ></Route>
         </Routes>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import Clock from "./clock";
 import { useInput } from "../util/useInput";
 import Selectable from "./selectable";
@@ -27,6 +28,9 @@ const Appointment = () => {
     if(events.length>0){
         console.log(patientName.value, reason, events);
         // debugger
+        
+        <NavLink to="/confirmation">
+      </NavLink>
     }else{
         window.alert("please pick a time for your appointment")
     }
@@ -82,7 +86,9 @@ const Appointment = () => {
               handler={handleSelect}
             />
           </div>
-          <input type="submit" value="Submit" />
+          <NavLink to={{pathname:"/confirmation", userProps:{name:patientName.value, reason:reason, time:events}}}>
+          <button type="submit" value="Submit" >Submit</button>
+      </NavLink>
         </form>
       </div>
     </div>

@@ -1,10 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { useLocation} from "react-router-dom"
 
-export default class Confirmation extends Component {
-  render() {
-    return <div>
+const Confirmation =(props)=>{
+    let location = useLocation();
+console.log(location.userProps)
+console.log(props.location);;
+
+    return (
+        <div>
         <h1>Confirmation Page</h1>
-    </div>;
-  }
-  
-}
+        <p>
+
+        {/* {location} */}
+
+        </p>
+    </div>
+    )
+};
+
+export default Confirmation

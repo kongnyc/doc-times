@@ -17,7 +17,7 @@ const Selectable = (props) => {
         step={30}
         timeslots={1}
         custom
-        defaultDate={new Date(2022, 1, 6)}
+        defaultDate={new Date(2022, 1, 9)}
         startAccessor="start"
         endAccessor="end"
         style={{ height: 500 }}
