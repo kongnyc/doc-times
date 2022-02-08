@@ -1,7 +1,7 @@
 .FlexBox{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
 }
 
